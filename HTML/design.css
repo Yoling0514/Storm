@@ -1,0 +1,295 @@
+:root {
+  --orange: rgb(224, 90, 1);
+  --vert: rgb(3, 102, 3);
+  --blanc: white;
+  --cambria: "cambria";
+}
+* {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif, var(--cambria);
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* Ajouté pour éviter le débordement */
+}
+body {
+  overflow-x: hidden; /* Empêche le défilement horizontal */
+}
+header {
+  padding: 20px;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  display: flex;
+  background-color: var(--orange);
+  height: auto;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  transition: padding 0.3s ease;
+}
+
+header.scrolled {
+  padding: 10px;
+}
+div.texte section {
+  text-align: center;
+  margin: 0 0 10px 0;
+}
+div.texte section p {
+  text-align: justify;
+}
+h2 {
+  color: var(--orange);
+}
+.inline {
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  display: flex;
+}
+div h1 {
+  color: var(--blanc);
+  cursor: pointer;
+}
+nav ul {
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  display: flex;
+  list-style: none;
+}
+nav ul a {
+  padding: 10px;
+  margin-left: 20px;
+  text-decoration: none;
+}
+nav ul a li button {
+  font-weight: bold;
+  width: auto;
+  height: 40px;
+  padding: 20px;
+  line-height: 0.2;
+  background-color: var(--orange);
+  color: var(--blanc);
+  border: none;
+}
+.select {
+  background-color: var(--orange);
+  color: var(--blanc);
+  border: 1px solid var(--blanc);
+  border-radius: 8px;
+}
+nav ul a li button:hover {
+  background-color: var(--orange);
+  color: var(--blanc);
+  border: none;
+  border-bottom: 3px solid var(--blanc);
+  border-radius: 0;
+  font-size: medium;
+  transition: 0.5s;
+}
+.texte {
+  margin-bottom: 20px;
+  margin-top: 20px;
+  margin-left: 0;
+  margin-right: 0;
+  padding: 20px;
+  background-color: var(--blanc);
+  box-shadow: 1px 2px 8px rgb(127, 161, 127);
+  width: auto;
+  text-align: justify;
+  line-height: 1.5;
+}
+.inline {
+  margin-bottom: 20px;
+  margin-top: 20px;
+  margin-left: 0;
+  margin-right: 0;
+  padding: 20px;
+  background-color: var(--blanc);
+  box-shadow: 1px 2px 8px rgb(127, 161, 127);
+  text-align: justify;
+  line-height: 1.5;
+  width: auto;
+  align-items: center;
+  display: flex;
+}
+main {
+  padding-top: 80px; /* Réduire la marge pour éviter que le contenu soit caché derrière le header fixe */
+}
+main div.texte h1 {
+  color: var(--orange);
+  text-align: center;
+}
+main div.inline img {
+  width: 400px;
+  border: 1px solid var(--orange);
+  border-radius: 8px;
+}
+footer {
+  background-color: var(--orange);
+  padding: 20px;
+  margin: 0;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  display: flex;
+  color: var(--blanc);
+}
+.contact {
+  width: 20vw;
+  padding: 2px;
+  text-align: center;
+  font-size: 12px;
+  line-height: 1.8;
+}
+div.contact section a button {
+  width: 180px;
+  height: 40px;
+  padding: 10px auto;
+  color: var(--blanc);
+  font-size: 16px;
+  font-weight: bold;
+  background-color: var(--orange);
+  border: 2px solid var(--blanc);
+  border-radius: 10px;
+}
+div.contact section a button:hover {
+  width: 182px;
+  color: var(--orange);
+  height: 42px;
+  background-color: var(--blanc);
+  border: 2px solid var(--orange);
+  border-radius: 10px;
+}
+.ligne {
+  border-color: var(--blanc);
+  display: none;
+}
+
+#temoignages {
+  background-color: var(--blanc);
+  padding: 20px;
+  box-shadow: 1px 2px 8px rgb(127, 161, 127);
+  margin-top: 20px;
+  border-radius: 8px;
+}
+
+#temoignages h2 {
+  color: var(--orange);
+}
+
+#temoignages p {
+  color: black;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+@media screen and (max-width: 920px) {
+  header {
+    position: static;
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    display: block;
+    background-color: var(--orange);
+  }
+  .ligne {
+    margin-top: 8px;
+    margin-bottom: 6px;
+    border-color: var(--blanc);
+    width: 98%;
+    display: block;
+  }
+  div h1 {
+    text-align: center;
+    font-size: 24px;
+  }
+  nav ul {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  nav ul a {
+    padding: 5px;
+    margin-left: 0;
+    text-decoration: none;
+  }
+  nav ul a li button {
+    margin: 0 5px;
+    font-weight: bold;
+    font-size: 12px;
+    width: auto;
+    height: 30px;
+    padding: 5px;
+    line-height: 1.2;
+    background-color: var(--orange);
+    color: var(--blanc);
+    border: 1px solid var(--blanc);
+    border-radius: 2px;
+  }
+  nav ul a li button:hover {
+    font-weight: bold;
+    font-size: 12px;
+    width: auto;
+    color: var(--orange);
+    background-color: var(--blanc);
+    border: 1px solid var(--orange);
+    border-radius: 2px;
+  }
+  .texte {
+    font-size: 14px;
+    padding: 15px;
+  }
+  .inline {
+    display: block;
+    text-align: center;
+  }
+  main {
+    padding-top: 20px; /* Réduire la marge pour éviter que le contenu soit caché derrière le header fixe */
+  }
+  main div.inline img {
+    width: 100%;
+    margin-bottom: 10px;
+    border: 1px solid var(--orange);
+    border-radius: 8px;
+  }
+  .select {
+    background-color: var(--blanc);
+    color: var(--orange);
+    border: 1px solid var(--orange);
+    border-radius: 2px;
+  }
+  footer {
+    display: block;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  .contact {
+    width: 100%;
+    text-align: center;
+    font-size: 12px;
+    line-height: 1.8;
+  }
+  div.contact section a button {
+    width: 100%;
+    height: 40px;
+    padding: 10px;
+    color: var(--blanc);
+    font-size: 14px;
+    font-weight: bold;
+    background-color: var(--orange);
+    border: 2px solid var(--blanc);
+    border-radius: 10px;
+  }
+  div.contact section a button:hover {
+    width: 100%;
+    color: var(--orange);
+    height: 42px;
+    background-color: var(--blanc);
+    border: 2px solid var(--orange);
+    border-radius: 10px;
+  }
+}

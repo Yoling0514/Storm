@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="form.css" />
+    <title>Connexion</title>
+  </head>
+  <body>
+    <section>
+      <h1>Connexion</h1>
+      <form action="connexion.php" method="post">
+        <div class="box">
+          <input type="email" name="email" placeholder="Email" required />
+          <img src="mail.png" width="30" alt="" />
+        </div>
+        <div class="box">
+          <input
+            type="password"
+            name="password"
+            placeholder="Mot de passe"
+            required
+          />
+          <img src="password.png" width="30" alt="" />
+        </div>
+        <button type="submit">Se connecter</button>
+      </form>
+      <div class="register">
+        <p>Pas encore inscrit? <a href="form.html">Inscrivez-vous</a></p>
+      </div>
+    </section>
+  </body>
+</html>

@@ -1,0 +1,142 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--cambria);
+}
+:root {
+  --cambria: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url("fond.jpg");
+  background-size: cover;
+  background-position: center;
+}
+section {
+  border: 2px solid white;
+  padding: 30px;
+  width: 420px;
+  border-radius: 20px;
+  background-color: transparent;
+  -webkit-backdrop-filter: blur(10px); /* Préfixe pour Safari */
+  backdrop-filter: blur(10px);
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+section h1 {
+  font-size: 30px;
+  text-align: center;
+  color: white;
+  margin-bottom: 20px;
+}
+.box {
+  width: 100%;
+  position: relative;
+  margin-bottom: 25px;
+}
+.box input {
+  width: 100%;
+  padding: 15px;
+  border-radius: 25px;
+  outline: none;
+  background-color: transparent;
+  border: 2px solid rgba(255, 255, 255, 0.582);
+  color: white;
+  font-weight: bold;
+  font-size: larger;
+  padding-right: 40px;
+}
+.box input::placeholder {
+  color: white;
+  font-size: 15px;
+}
+img {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+}
+.remember {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.remember label {
+  color: white;
+}
+.remember a,
+.register a {
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: bold;
+}
+.remember a:hover {
+  text-decoration: underline;
+}
+.register a:hover {
+  text-decoration: underline;
+}
+.remember input {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+button {
+  width: 100%;
+  padding: 15px;
+  border-radius: 25px;
+  outline: none;
+  background-color: var(--orange);
+  border: none;
+  color: white;
+  font-weight: bold;
+  font-size: larger;
+  cursor: pointer;
+}
+button:hover {
+  background-color: var(--orange);
+  color: white;
+  border: none;
+  border-bottom: 3px solid white;
+  border-radius: 0;
+  font-size: medium;
+  transition: 0.5s;
+}
+button:active {
+  transform: translateY(2px);
+}
+button:focus {
+  outline: none;
+}
+button:disabled {
+  background-color: grey;
+  cursor: not-allowed;
+}
+button:disabled:hover {
+  background-color: grey;
+  color: white;
+  border: none;
+  border-bottom: 3px solid white;
+  border-radius: 0;
+  font-size: medium;
+  transition: 0.5s;
+}
+button:disabled:active {
+  transform: translateY(2px);
+}
+button:disabled:focus {
+  outline: none;
+}
+.register p {
+  text-align: center;
+  color: white;
+  margin-top: 20px;
+}
